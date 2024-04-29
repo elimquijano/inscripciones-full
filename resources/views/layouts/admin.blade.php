@@ -43,6 +43,9 @@
     <script
         src="https://cdn.jsdelivr.net/npm/datatables-buttons-excel-styles@1.1.1/js/buttons.html5.styles.templates.min.js">
     </script>
+    <!-- JS para FixedHeader -->
+    <script type="text/javascript" src="https://cdn.datatables.net/fixedheader/3.1.9/js/dataTables.fixedHeader.min.js">
+    </script>
 
     <link rel="stylesheet" href="{{ asset('css/index.css') }}">
     <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}">
@@ -171,9 +174,9 @@
         </div>
     </div>
 
+    <script src="{{ asset('js/crudPago.js') }}"></script>
     <script src="{{ asset('js/dashcontroller.js') }}"></script>
     <script src="{{ asset('js/dashboard.js') }}"></script>
-    <script src="{{ asset('js/crudPago.js') }}"></script>
 </body>
 
 </html>

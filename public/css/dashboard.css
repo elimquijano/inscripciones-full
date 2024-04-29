@@ -82,7 +82,7 @@ body {
     scrollbar-width: none;
 }
 
-#sidebar::--webkit-scrollbar {
+#sidebar::state(webkit-scrollbar) {
     display: none;
 }
 
