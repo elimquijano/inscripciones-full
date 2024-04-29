@@ -77,8 +77,12 @@ $(document).ready(function () {
                 borrarCampos("form-inscripcion");
             },
             error: function (error) {
-                swal("Error", "Error: " + error, "error");
-                console.log("Error: ", error);
+                swal(
+                    "Error",
+                    "Error: " + error?.responseJSON?.message,
+                    "error"
+                );
+                console.log("Error: ", error?.responseJSON?.message);
             },
         });
     });

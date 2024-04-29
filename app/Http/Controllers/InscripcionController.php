@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Inscripcion;
-use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class InscripcionController extends Controller
@@ -33,7 +32,7 @@ class InscripcionController extends Controller
         }
 
         // Define el tamaño máximo de la imagen en kilobytes
-        $maxImageSize = 2048;  // 2MB
+        $maxImageSize = 3072;  // 3MB
 
         // Verifica si todos los campos necesarios están presentes y si la imagen existe y no supera el tamaño máximo
         $request->validate([
