@@ -147,12 +147,6 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <label for="" class="col-form-label">N° de Voucher:</label>
-                                    <input type="text" class="form-control" id="num_voucher">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
                                     <label for="" class="col-form-label">Codigo de Pago</label>
                                     <input type="text" class="form-control" id="cod_pago">
                                 </div>
@@ -160,7 +154,7 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label for="" class="col-form-label">Fecha</label>
-                                    <input type="date" class="form-control" id="fecha_pago">
+                                    <input type="datetime-local" class="form-control" id="fecha_pago">
                                 </div>
                             </div>
                         </div>

@@ -9,7 +9,6 @@ class Pago extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'num_voucher',
         'cod_pago',
         'fecha_pago',
     ];

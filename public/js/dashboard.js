@@ -64,7 +64,7 @@ $(document).ready(function () {
             { data: "departamento" },
             { data: "provincia" },
             { data: "distrito" },
-            { data: "num_voucher" },
+            { data: "name_apoderado" },
             { data: "cod_pago" },
             { data: "fecha_pago" },
             {

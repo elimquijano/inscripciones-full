@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Pago;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class PagoController extends Controller
@@ -27,16 +28,16 @@ class PagoController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'num_voucher' => 'required',
             'cod_pago' => 'required',
             'fecha_pago' => 'required',
         ]);
 
         $datos = $request->all();
+        $datos['fecha_pago'] = $this->formatDateTime($datos['fecha_pago']);
 
-        $inscripcion = Pago::create($datos);
+        $pago = Pago::create($datos);
 
-        return response()->json($inscripcion, 201);
+        return response()->json($pago, 201);
     }
 
     public function update(Request $request, $id)
@@ -62,5 +63,15 @@ class PagoController extends Controller
 
         $pago->delete();
         return response()->json(['message' => 'Pago eliminado con éxito']);
+    }
+
+    function formatDateTime($datetime)
+    {
+        try {
+            $date = Carbon::parse($datetime);
+            return $date->format('Y-m-d H:i:s');
+        } catch (\Exception $e) {
+            return $datetime;
+        }
     }
 }

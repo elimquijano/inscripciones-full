@@ -16,12 +16,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('group');
+})->name('grupal');
+
+Route::get('/individual', function () {
     return view('index');
-});
+})->name('index');
 
 Route::get('/dashboard', function () {
-    //$inscripciones = Inscripcion::all();
-    return view('dashboard'/* , compact('inscripciones') */);
+    return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {

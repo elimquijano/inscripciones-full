@@ -18,7 +18,6 @@ $(document).ready(function () {
         },
         columns: [
             { data: "id" },
-            { data: "num_voucher" },
             { data: "cod_pago" },
             { data: "fecha_pago" },
             {
@@ -88,7 +87,6 @@ $(document).ready(function () {
         e.preventDefault(); //evita el comportambiento normal del submit, es decir, recarga total de la página
         const idpago = id == null ? "" : "/" + id + "/";
         console.log(idpago, method);
-        num_voucher = $.trim($("#num_voucher").val());
         cod_pago = $.trim($("#cod_pago").val());
         fecha_pago = $.trim($("#fecha_pago").val());
         $.ajax({
@@ -96,7 +94,6 @@ $(document).ready(function () {
             type: method,
             datatype: "json",
             data: {
-                num_voucher: num_voucher,
                 cod_pago: cod_pago,
                 fecha_pago: fecha_pago,
             },
@@ -123,10 +120,8 @@ $(document).ready(function () {
         method = "PUT"; //editar
         fila = $(this).closest("tr");
         id = parseInt(fila.find("td:eq(0)").text()); //capturo el ID
-        num_voucher = fila.find("td:eq(1)").text();
-        cod_pago = fila.find("td:eq(2)").text();
-        fecha_pago = fila.find("td:eq(3)").text();
-        $("#num_voucher").val(num_voucher);
+        cod_pago = fila.find("td:eq(1)").text();
+        fecha_pago = fila.find("td:eq(2)").text();
         $("#cod_pago").val(cod_pago);
         $("#fecha_pago").val(fecha_pago);
         $(".modal-header").css("background-color", "#007bff");

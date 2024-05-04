@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::create('pagos', function (Blueprint $table) {
             $table->id();
-            $table->string('num_voucher');
             $table->string('cod_pago');
             $table->string('fecha_pago');
             $table->timestamps();

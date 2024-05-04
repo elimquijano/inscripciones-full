@@ -59,7 +59,7 @@
                                 <th class="text-center" style="min-width: 80px">DEPARTAMENTO</th>
                                 <th class="text-center" style="min-width: 80px">PROVINCIA</th>
                                 <th class="text-center" style="min-width: 80px">DISTRITO</th>
-                                <th class="text-center" style="min-width: 80px">N° DE VOUCHER</th>
+                                <th class="text-center" style="min-width: 80px">APODERADO</th>
                                 <th class="text-center" style="min-width: 80px">COD. PAGO</th>
                                 <th class="text-center" style="min-width: 80px">FECHA</th>
                                 <th class="text-center" style="min-width: 80px">IMAGEN</th>
@@ -105,9 +105,8 @@
                         <thead class="text-center">
                             <tr>
                                 <th class="text-center" style="min-width: 80px">ID</th>
-                                <th class="text-center" style="min-width: 80px">N° DE VOUCHER</th>
                                 <th class="text-center" style="min-width: 80px">COD. PAGO</th>
-                                <th class="text-center" style="min-width: 80px">FECHA</th>
+                                <th class="text-center" style="min-width: 80px">FECHA Y HORA</th>
                                 <th class="text-center" style="min-width: 80px">ACCION</th>
                             </tr>
                         </thead>

@@ -11,21 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('inscripcions', function (Blueprint $table) {
+        Schema::create('apoderados', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->string('dni');
             $table->string('telefono');
-            $table->string('colegio');
-            $table->string('grado');
-            $table->string('nivel');
-            $table->string('departamento');
-            $table->string('provincia');
-            $table->string('distrito');
-            $table->string('num_voucher');
-            $table->string('cod_pago');
-            $table->string('fecha_pago');
-            $table->text('imagen');
+            $table->string('email');
             $table->timestamps();
         });
     }
@@ -35,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('inscripcions');
+        Schema::dropIfExists('apoderados');
     }
 };

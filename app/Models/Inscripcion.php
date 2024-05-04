@@ -18,9 +18,9 @@ class Inscripcion extends Model
         'departamento',
         'provincia',
         'distrito',
-        'num_voucher',
         'cod_pago',
         'fecha_pago',
         'imagen',
+        'id_apoderado',
     ];
 }
