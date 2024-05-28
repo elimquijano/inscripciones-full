@@ -258,7 +258,6 @@ $(document).ready(function () {
         newRow.append($("<td>").text(jsonData?.dni));
         newRow.append($("<td>").text(jsonData?.nivel));
         newRow.append($("<td>").text(jsonData?.grado));
-        newRow.append($("<td>").text(jsonData?.num_voucher));
         newRow.append($("<td>").text(jsonData?.cod_pago));
         newRow.append($("<td>").text(jsonData?.fecha_pago));
         newRow.append($("<td>").text(jsonData?.imagen.name));

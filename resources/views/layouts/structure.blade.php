@@ -43,7 +43,7 @@
                 <div class="col-12 py-4">
                     <div class="alert alert-info alert-dismissible fade show">
                         <button type="button" class="close" data-dismiss="alert">&times;</button>
-                        <strong>¿Tiene alguna queja?</strong> Comuníquese con soporte haciendo click <a rel=""
+                        <strong>¿Tiene alguna inconveniente?</strong> Comuníquese con soporte haciendo click <a rel=""
                             target="_blank"
                             href="https://api.whatsapp.com/send?phone=929804291&text=Tengo un inconveniente con la inscripción!">AQUI</a>
                     </div>
@@ -70,6 +70,13 @@
                     <div class="alert alert-warning alert-dismissible fade show">
                         <button type="button" class="close" data-dismiss="alert">&times;</button>
                         <strong>¡RECUERDE!</strong> Rellenar cuidadosamente estos campos en el formulario.
+                    </div>
+                    <div class="py-2">
+                        N° de Cuenta de Scotiabank:
+                        <h4>358-0774648</h4>
+                        Nombre:
+                        <br>
+                        Jorge C. Ludgarda o Aguirre Y. Linda
                     </div>
                     <div class="py-2">
                         Los datos de su comprobante están distribuidos del siguiente modo:

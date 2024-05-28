@@ -5,17 +5,17 @@
 @section('main')
     <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item">
-            <a class="nav-link active" href="{{ route('grupal') }}">Inscripción De Alumnos Con Asesor</a>
+            <a class="nav-link active" href="{{ route('grupal') }}">Inscribir Muchos Alumnos con Tutor por I.E.</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('index') }}">Inscripción Alumno Libre</a>
+            <a class="nav-link btn-danger" href="{{ route('index') }}">Inscribir Un Solo Alumno Sin Tutor</a>
         </li>
     </ul>
     <form id="form-inscripcion-grupal" action="{{ route('inscripcion') }}" method="POST" enctype="multipart/form-data"
         class="row m-0">
         @csrf
         <div class="col-sm-12 form-group p-2">
-            <strong>DATOS DEL APODERADO O DELEGADO</strong>
+            <strong>DATOS DEL TUTOR O APODERADO</strong>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4 form-group p-2">
             <label for="name_apoderado" class="d-flex">Apellidos y Nombres(<p class="text-danger">*</p>):</label>
@@ -110,16 +110,16 @@
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4 form-group p-2">
                     <label for="cod_pago" class="d-flex">Código de Pago(<p class="text-danger">*</p>):</label>
-                    <input type="number" class="form-control" placeholder="" id="cod_pago" name="cod_pago" required
+                    <input type="text" class="form-control" placeholder="" id="cod_pago" name="cod_pago" required
                         autocomplete="off">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4 form-group p-2">
-                    <label for="fecha_pago" class="d-flex">Fecha y hora(<p class="text-danger">*</p>):</label>
+                    <label for="fecha_pago" class="d-flex">Fecha y hora del pago(<p class="text-danger">*</p>):</label>
                     <input type="datetime-local" class="form-control" id="fecha_pago" name="fecha_pago" required
                         autocomplete="off">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4 form-group p-2">
-                    <label for="image" class="d-flex">Foto del Voucher(<p class="text-danger">*</p>):</label>
+                    <label for="image" class="d-flex">Foto del Voucher(<p class="text-danger">*</p>en imagen o foto):</label>
                     <input type="file" accept="image/x-png,image/jpeg,image/jpg" class="form-control" id="imagen"
                         name="imagen">
                 </div>

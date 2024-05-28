@@ -61,8 +61,9 @@
                                 <th class="text-center" style="min-width: 80px">DISTRITO</th>
                                 <th class="text-center" style="min-width: 80px">APODERADO</th>
                                 <th class="text-center" style="min-width: 80px">COD. PAGO</th>
-                                <th class="text-center" style="min-width: 80px">FECHA</th>
+                                <th class="text-center" style="min-width: 80px">FECHA DE PAGO</th>
                                 <th class="text-center" style="min-width: 80px">IMAGEN</th>
+                                <th class="text-center" style="min-width: 80px">FECHA DE INSCRIPCION</th>
                                 <th class="text-center" style="min-width: 80px">VERIFICADO</th>
                             </tr>
                         </thead>

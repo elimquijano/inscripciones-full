@@ -80,6 +80,7 @@ $(document).ready(function () {
                     );
                 },
             },
+            { data: "created_at" },
             { data: "verificado" },
         ],
         language: {
